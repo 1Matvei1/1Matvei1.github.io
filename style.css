@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -26,6 +27,7 @@
 	}
 } */
 
+
 img{
     max-width: 100%;
     height: auto;
@@ -40,15 +42,21 @@ img{
     
 }
 
+.video{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
 
+@media screen and (max-width: 500px){
+    .video{
+        margin: auto;
+    }
+}
 
-/* Cool infinite background scrolling animation.
- * Twitter: @kootoopas
- */
-/* Exo thin font from Google. */
+/* Animations bg */
 @import url(https://fonts.googleapis.com/css?family=Exo:100);
-/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
-/* Animations */
+
 @-webkit-keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
@@ -89,6 +97,8 @@ img{
     background-position: 50px 50px;
   }
 }
+
+
 /* Main styles */
 body {
   margin-top: 13.5rem;
@@ -112,7 +122,7 @@ body {
 }
 body::before {
   content: "Лыжи";
-  font-size: 8rem;
+  font-size: 5rem;
   font-weight: 100;
   font-style: normal;
 }
